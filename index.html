@@ -83,17 +83,17 @@
             <li class="content__item content__item--part">
               <p class="content__description-title">Небольшая площадь</p>
               <p class="content__description-number">&ndash; №3 &ndash;</p>
-              <p class="content__description-text">Все достопримечательности<br> находятся очень близко</p>
+              <p class="content__description-text text--width">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="content__item content__item--part">
               <p class="content__description-title">Красивая дорога</p>
               <p class="content__description-number">&ndash; №4 &ndash;</p>
-              <p class="content__description-text">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+              <p class="content__description-text text--width">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="content__item content__item--part">
               <p class="content__description-title">Мало туристов</p>
               <p class="content__description-number">&ndash; №5 &ndash;</p>
-              <p class="content__description-text">Большинство едет в гранд каньон<br> и толпится там</p>
+              <p class="content__description-text text--width">Большинство едет в гранд каньон и&nbsp;толпится там</p>
             </li>
           </ul>
         </section>
@@ -107,25 +107,25 @@
           <form class="search__form modal-show" action="https://echo.htmlacademy.ru" method="post">
             <div class="search__inner">
               <label class="search__date search-label" for="date-arrival">Дата заезда:</label>
-              <input class="search__input" id="date-arrival" type="text" placeholder="24 апреля 2017">
-              <div class="search__calendar"></div>
+              <input class="search__input" name="date-arrival" id="date-arrival" type="text" placeholder="24 апреля 2017">
+              <button class="search__calendar"></button>
             </div>
             <div class="search__inner">
               <label class="search__date search-label" for="date-departure">Дата выезда:</label>
-              <input class="search__input" id="date-departure" type="text" placeholder="4 июля 2017">
-              <div class="search__calendar"></div>
+              <input class="search__input" name="date-departure" id="date-departure" type="text" placeholder="4 июля 2017">
+              <button class="search__calendar"></button>
             </div>
             <div class="search__quantity">
               <div class="search__adults">
-                <p class="search__people">Взрослые:</p>
+                <label class="search__people" for="quantity-adults">Взрослые:</label>
                 <div class="search__number minus-adults minus"></div>
-                <div class="search__number quantity-adults">2</div>
+                <input class="search__number quantity-adults" value="2" id="quantity-adults" type="text" name="quantity-adults">
                 <div class="search__number plus-adults plus"></div>
               </div>
               <div class="search__quantity">
-                <p class="search__people children">Дети:</p>
+                <label class="search__people children" for="quantity-children"> Дети:</label>
                 <div class="search__number minus-children minus"></div>
-                <div class="search__number quantity-children">0</div>
+                <input class="search__number quantity-children" value="0" id="quantity-children" type="text" name="quantity-children">
                 <div class="search__number plus-children plus"></div>
               </div>
             </div>

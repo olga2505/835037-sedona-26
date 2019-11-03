@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav__item--alignment {
-    text-align: end;
+    text-align: right;
 }
 
 .nav__list :nth-child(2) {
@@ -119,7 +119,7 @@ input[type="radio"].visually-hidden {
     height: 509px;
     text-align: center;
     position: relative;
-    margin-bottom: 62px;
+    margin-bottom: 61px;
 }
 
 .header__photo img {
@@ -129,7 +129,7 @@ input[type="radio"].visually-hidden {
 .header__photo::before {
     content: "";
     position: absolute;
-    bottom: -4px;
+    bottom: -2px;
     right: -1px;
     width: 1202px;
     height: 59px;
@@ -142,7 +142,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
 }
 
 .content__title {
@@ -193,7 +193,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     width: 151px;
     text-align: center;
-    margin-top: 46px;
+    margin-top: 47px;
     margin-bottom: 25px;
 }
 
@@ -213,8 +213,14 @@ input[type="radio"].visually-hidden {
     margin: 0 0 30px 0;
 }
 
+.text--width {
+    width: 261px;
+}
+
 .content__photo {
     margin: 0;
+    font-size: 0;
+    line-height: 0;
 }
 
 .advantages {
@@ -237,7 +243,7 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 157px 0 10px 0;
+    margin: 160px 0 10px 0;
 }
 
 .advantages__text { 
@@ -308,7 +314,7 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 32px 0 26px 0;
+    margin: 36px 0 26px 0;
 }
 
 .search-hotel__text {
@@ -355,7 +361,7 @@ input[type="radio"].visually-hidden {
 .search__form {
     position: absolute;
     width: 568px;
-    min-height: 395px;
+    min-height: 398px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -430,7 +436,7 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 27px 0 0 0;
+    margin: 30px 20px 0 0;
 }
 
 .search__input {
@@ -439,7 +445,7 @@ input[type="radio"].visually-hidden {
     width: 346px;
     height: 38px;
     padding: 5px 11px;
-    margin: 15px 0;
+    margin: 20px 0 9px 0;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -455,23 +461,37 @@ input[type="radio"].visually-hidden {
 
 .search__calendar {
     position: absolute;
-    background-image: url("../img/calendar-1.svg");
-    opacity: 0.2;
     width: 21px;
     height: 22px;
-    top: 23px;
+    padding: 0;
+    border: 0;
+    top: 28px;
     right: 9px;
+    background: transparent;
 }
 
-.search__calendar:hover {
+.search__calendar::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    top: 0;
+    right: 2px;
+    background-image: url("../img/calendar-1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.search__calendar:hover::before {
     opacity: 1;
 }
 
-.search__calendar:active {
+.search__calendar:active::before {
     opacity: 1;
     background-image: url("../img/calendar-2.svg");
 }
-
 
 .search__quantity {
     display: flex;
@@ -488,17 +508,18 @@ input[type="radio"].visually-hidden {
     background-color: #f2f2f2;
     text-align: center;
     padding: 9px;
-    margin: 16px 0 53px 0;
+    margin: 21px 0 53px 0;
     position: relative;
     font-size: 14px;
     font-weight: bold;
+    border: 0;
 }
 
 .search__people {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 26px 41px 0 0;
+    margin: 32px 41px 0 0;
 }
 
 .children {
@@ -826,6 +847,7 @@ input[type="radio"].visually-hidden {
     min-height: 36px;
     position: relative;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .filter__range-price::before {
@@ -1090,6 +1112,7 @@ position: relative;
     color: white;
     padding: 5px 16px 5px 17px;
     margin: 0 6px 13px 0;
+    cursor: pointer;
 }
 
 .btn:hover {

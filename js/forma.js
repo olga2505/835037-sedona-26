@@ -1,7 +1,7 @@
 var link = document.querySelector(".search-hotel__btn");
 var popup = document.querySelector(".search__form");
 
-var date = popup.querySelector(".search__date");
+var date = popup.querySelector(".search__input");
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();

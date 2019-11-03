@@ -11,19 +11,19 @@
  document.addEventListener("click", function (evt) {
   var target = evt.target;
 
-  if(target.classList.contains("minus-adults")) {
-    quantityAdults.innerHTML = +quantityAdults.innerHTML - 1;
+  if(target.classList.contains("minus-adults") && quantityAdults.value >= 1) {
+    quantityAdults.value = +quantityAdults.value - 1;
   }
 
-  if(target.classList.contains("plus-adults")) {
-    quantityAdults.innerHTML = +quantityAdults.innerHTML + 1;
+  if(target.classList.contains("plus-adults") && quantityAdults.value <= 98) {
+    quantityAdults.value = +quantityAdults.value + 1;
   }
 
-  if(target.classList.contains("minus-children")) {
-    quantityChildren.innerHTML = +quantityChildren.innerHTML - 1;
+  if(target.classList.contains("minus-children") && quantityChildren.value >= 1) {
+    quantityChildren.value = +quantityChildren.value - 1;
   }
 
-  if(target.classList.contains("plus-children")) {
-    quantityChildren.innerHTML = +quantityChildren.innerHTML + 1;
+  if(target.classList.contains("plus-children") && quantityChildren.value <= 98 ) {
+    quantityChildren.value = +quantityChildren.value + 1;
   }
 })
